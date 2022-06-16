@@ -1,4 +1,3 @@
-
 *,
 ::after,
 ::before {
@@ -9,6 +8,7 @@
 
 html {
     font-size: 100%;
+    
   }
 
   :root {
@@ -24,7 +24,7 @@ html {
     --primary-800: #0a6c74;
     --primary-900: #044e54;
   
- 
+
     /* rest of the colors */
     --black: #222;
     --white: #fff;
