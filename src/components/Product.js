@@ -1,27 +1,23 @@
-import { useState } from "react";
-//zatim fetch potom zmenit product jinak
-function Product({ product, onClickHandler }) {
+import { formatPrice } from '../utils/helpers'
+import { FaSearch } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+import Wrapper from '../assets/wrappers/Product'
 
-  const [isInCart, setIsInCart] = useState(false)
-
-
-  return (<div style={{
-    width: "150px",
-    border: "1px solid black",
-    display: "flex",
-    flexDirection: "column",
-    margin: "5px",
-    padding: "5px"
-  }}>
-    <h2>{product.name}</h2>
-    <div>{product.price} CZK</div>
-    <div><img src={product.image} height={150} width={150} alt="product"/></div>
-    <div>{isInCart && "In cart"}</div>
-    <button onClick={() => {
-      setIsInCart(true);
-      onClickHandler(product)
-    }}>Buy</button>
-  </div>)
+const Product = ({ image, name, price, id }) => {
+  return (
+    <Wrapper>
+      <div className='container'>
+        <img src={image} alt={name} />
+        <Link to={`/products/${id}`} className='link'>
+          <FaSearch />
+        </Link>
+      </div>
+      <footer>
+        <h5>{name}</h5>
+        <p>{formatPrice(price)}</p>
+      </footer>
+    </Wrapper>
+  )
 }
 
 export default Product;

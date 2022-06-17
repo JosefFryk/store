@@ -5,6 +5,7 @@ import SearchBar from "./SearchBar"
 import {useState, useEffect} from 'react'
 import UpperNavMenu from "./UpperNavMenu"
 import Product from "./Product"
+import CartButtons from '../components/CartButtons'
 
 
 //search stuffs prozatim
@@ -65,11 +66,7 @@ const Navbar = () => {
               
             </div>
             <div className="kosik-box">
-           
-
-
-              
-
+              <CartButtons />
             </div>
           <div>
 
