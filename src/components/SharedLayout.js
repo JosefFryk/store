@@ -1,5 +1,4 @@
 import Navbar from './NavBar'
-import Sidebar from './SideBar'
 import Wrapper from '../assets/wrappers/SharedLayout'
 import { Outlet } from 'react-router-dom'
 
@@ -14,7 +13,7 @@ const SharedLayout = () => {
     
         <Wrapper>
       <main className='dashboard'>
-        <Sidebar/>
+        
         <div>
           <Navbar />
           <div className='dashboard-page'>

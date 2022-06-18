@@ -9,7 +9,7 @@ const UpperNavMenu = () => {
                 <Link to="/">Home</Link>
             </div>
             <div>
-                <Link to="/edit-product">Edit product</Link>
+                <Link to="/products">Products</Link>
             </div>
             <div>
                 <Link to="/cart">Cart</Link>

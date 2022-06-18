@@ -1,6 +1,5 @@
 
 import Navbar from './NavBar'
-import Sidebar from './SideBar'
 import CartContent from './CartContent'
 import PageHero from './PageHero'
 import ProductList from './ProductList'
@@ -19,7 +18,6 @@ import Contact from './Contact'
 
 export {
   Navbar,
-  Sidebar,
   PageHero, 
   CartContent,
   ProductList,
