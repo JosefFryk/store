@@ -1,24 +1,29 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css';
 import SharedLayout from './components/SharedLayout'
-import Landing from './pages/Landing';
-import Cart from './pages/Cart'
+
+import { SingleProduct , Cart, Landing, ProductsPage, Auth } from './pages';
 
 
 function App() {
   return (
+    <Auth>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={
           <SharedLayout />
-            } >
-        <Route path='landing' element={<Landing />} />
-        <Route path='cart' element={<Cart/>} />
+         
+        } >
+        <Route exact path='/' element={<Landing />} />
+        <Route exact path='/cart' element={<Cart/>} />
+        <Route  exact path='/products/:id' element={<SingleProduct/>} />
+        <Route exact path='/products' element={<ProductsPage />}/>
         
         </Route>
       </Routes>
     
     </BrowserRouter>
+    </Auth>
   );
 }
 
