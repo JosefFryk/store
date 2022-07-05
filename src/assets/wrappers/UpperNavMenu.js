@@ -6,6 +6,13 @@ display:flex;
 flex-direction: row;
 gap:2rem;
 
+a {
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
 
 
 

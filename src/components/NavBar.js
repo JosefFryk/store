@@ -2,7 +2,6 @@ import Wrapper from "../assets/wrappers/Navbar"
 import Logo from './Logo'
 import SearchBar from "./SearchBar"
 import UpperNavMenu from "./UpperNavMenu"
-import Product from "./Product"
 import CartButtons from '../components/CartButtons'
 
 
@@ -16,7 +15,7 @@ const Navbar = () => {
 
       <Wrapper>
         
-        <div>
+        <div className="logo-box">
           <Logo />
           <h3 className='logo-text'>Shopenze</h3>
         </div>

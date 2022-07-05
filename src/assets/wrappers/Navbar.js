@@ -7,6 +7,7 @@ const Wrapper = styled.nav`
     justify-content: space-between;
     flex-direction: row;
     box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.1);
+    background-color: #442D81;
     .logo{
         display:flex;
         align-items:center;
@@ -24,6 +25,12 @@ const Wrapper = styled.nav`
         display: flex;
         justify-content: flex-end;
     }
+    @media (max-width: 576px) {
+    .logo-box {
+        display: none;
+    }
+  }
+ 
 
     
 `

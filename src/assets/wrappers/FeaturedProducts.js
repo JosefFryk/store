@@ -5,9 +5,11 @@ const Wrapper = styled.section`
   .featured {
     margin: 4rem auto;
     display: grid;
-    gap: 2.5rem;
+    gap: 1rem;
     img {
       height: 225px;
+      
+
     }
   }
   .btn {

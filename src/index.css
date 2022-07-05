@@ -67,6 +67,7 @@ html {
     color: var(--textColor);
     display:flex;
     justify-content: center;
+    
   }
 
   ul {

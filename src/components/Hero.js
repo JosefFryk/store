@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 
 import Wrapper from '../assets/wrappers/Hero'
+import heroBcg from '../assets/images/hero-bcg.jpeg'
+import heroBcg2 from '../assets/images/hero-bcg-2.jpeg'
 
 const Hero = () => {
   return (
@@ -19,7 +21,8 @@ const Hero = () => {
         </Link>
       </article>
       <article className='img-container'>
-
+        <img src={heroBcg} alt='nice table' className='main-img' />
+        <img src={heroBcg2} alt='person working' className='accent-img' />
       </article>
     </Wrapper>
   )
