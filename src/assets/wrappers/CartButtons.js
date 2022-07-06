@@ -7,10 +7,9 @@ const Wrapper = styled.div`
   align-items: center;
   width: 225px;
   .cart-btn {
-    color: var(--clr-grey-1);
+    color: var(--clr-black);
     font-size: 1.5rem;
     letter-spacing: var(--spacing);
-    color: var(--clr-grey-1);
     display: flex;
     align-items: center;
   }
@@ -27,7 +26,6 @@ const Wrapper = styled.div`
     position: absolute;
     top: -10px;
     right: -16px;
-    background: var(--clr-primary-5);
     width: 16px;
     height: 16px;
     display: flex;

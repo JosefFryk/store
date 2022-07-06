@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section`
+
+.header{
+  padding: 4rem;
+}
+
+
   h3,
   h4 {
     color: var(--clr-primary-1);
@@ -13,12 +19,12 @@ const Wrapper = styled.section`
   p {
     margin-bottom: 0;
     line-height: 1.8;
-    color: var(--clr-primary-3);
+    color: var(--clr-black);
   }
   .services-center {
-    margin-top: 4rem;
     display: grid;
-    gap: 2.5rem;
+    gap: 2rem;
+    padding: 4rem 2rem;
   }
   .service {
     background: var(--clr-primary-7);
@@ -38,7 +44,7 @@ const Wrapper = styled.section`
     margin-bottom: 1rem;
     border-radius: 50%;
     background: var(--clr-primary-10);
-    color: var(--clr-primary-1);
+    color: var(--clr-primary-5);
     svg {
       font-size: 2rem;
     }
@@ -47,12 +53,17 @@ const Wrapper = styled.section`
     .header {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      text-align: center;
+    }
+    .header p {
+      width: 400px;
     }
   }
   @media (min-width: 576px) {
     .services-center {
       grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     }
+
   }
   @media (min-width: 1280px) {
     padding: 0;

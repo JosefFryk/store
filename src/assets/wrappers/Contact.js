@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 const Wrapper = styled.section`
+  background: linear-gradient( #EADED7 20%, #C7C7FF 30% 75%, white 100%) ;
   padding: 5rem 0;
   h3 {
     text-transform: none;
@@ -37,15 +38,15 @@ const Wrapper = styled.section`
     text-transform: capitalize;
   }
   .submit-btn {
-    background: var(--clr-primary-5);
+    background: var(--clr-primary-4);
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     cursor: pointer;
     transition: var(--transition);
-    color: var(--clr-black);
+    color: var(--clr-white);
   }
   .submit-btn:hover {
-    color: var(--clr-white);
+    color: var(--clr-primary-3);
   }
   @media (min-width: 992px) {
     .content {
@@ -60,7 +61,7 @@ const Wrapper = styled.section`
     }
   }
   @media (min-width: 1280px) {
-    padding: 15rem 0;
+    padding: 5rem 0;
   }
 `
 

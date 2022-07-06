@@ -7,7 +7,8 @@ const Wrapper = styled.nav`
     justify-content: space-between;
     flex-direction: row;
     box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.1);
-    background-color: #442D81;
+    background-color: var(--clr-primary-4);
+    padding: 2rem 5rem;
     .logo{
         display:flex;
         align-items:center;

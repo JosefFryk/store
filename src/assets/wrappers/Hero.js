@@ -15,6 +15,7 @@ const Wrapper = styled.section`
     color: var(--clr-grey-5);
     font-size: 1rem;
   }
+
   @media (min-width: 992px) {
     height: calc(100vh - 20rem);
     grid-template-columns: 1fr 1fr;
@@ -28,6 +29,12 @@ const Wrapper = styled.section`
     .hero-btn {
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
+      background: var(--clr-primary-4);
+      color: var(--clr-white);
+      border-radius: 5px;
+    }
+    .hero-btn:hover{
+      color: orange;
     }
     .img-container {
       display: block;

@@ -12,13 +12,15 @@ const CartButtons = () => {
     const { closeSidebar } = useProductsContext()
     const { total_items, clearCart } = useCartContext()
     const { loginWithRedirect, myUser, logout } = useUserContext()
+
+    const TotalNumberItems = total_items
     return (
       <Wrapper className='cart-btn-wrapper'>
         <Link to='/cart' className='cart-btn' onClick={closeSidebar}>
           Cart
           <span className='cart-container'>
             <FaShoppingCart />
-            <span className='cart-value'>{total_items}</span>
+            <span className='cart-value' style={{backgroundColor : TotalNumberItems === 0 ? 'red': 'green'}} >{total_items}</span>
           </span>
         </Link>
         {myUser ? (

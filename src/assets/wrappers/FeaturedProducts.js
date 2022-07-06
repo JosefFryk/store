@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 const Wrapper = styled.section`
   background: var(--clr-grey-10);
+  padding-left: 2rem;
+  padding-right: 2rem;
   .featured {
-    margin: 4rem auto;
+    margin: 3rem auto;
     display: grid;
     gap: 1rem;
     img {
@@ -17,6 +19,10 @@ const Wrapper = styled.section`
     width: 148px;
     margin: 0 auto;
     text-align: center;
+    border-radius: 5px;
+  }
+  .btn:hover{
+    color: var(--clr-primary-3);
   }
   @media (min-width: 576px) {
     .featured {

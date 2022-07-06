@@ -14,7 +14,10 @@ const Wrapper = styled.div`
         white-space: nowrap;
         width: 1px;
     }
-    
+
+    @media (max-width: 576px) {
+        display: none;
+  }
     
 
 

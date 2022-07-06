@@ -3,8 +3,7 @@ import Wrapper from '../assets/wrappers/Services'
 
 const Services = () => {
   return (
-    <Wrapper>
-      <div className='section-center'>
+    <Wrapper> 
         <article className='header'>
           <h3>
             custom furniture <br />
@@ -28,7 +27,6 @@ const Services = () => {
             )
           })}
         </div>
-      </div>
     </Wrapper>
   )
 }
