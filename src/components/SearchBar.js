@@ -1,36 +1,43 @@
 
 import Wrapper from '../assets/wrappers/SearchBar'
 import { useNavigate } from 'react-router-dom'
+import { useFilterContext } from '../context/filterContext';
 
-const SearchBar = ({ searchQuery, setSearchQuery }) => {
-    const navigate = useNavigate();
-    const onSubmit = e => {
-        navigate.push(`?s=${searchQuery}`)
-        e.preventDefault()
-    };
+const SearchBar = () => {
+    const {
+        filters: {
+          text,
+        },
+        updateFilters,
+      } = useFilterContext();
+      const navigate = useNavigate();
+      const handleSubmit = event => {
+        event.preventDefault();
+        navigate('/products');
+      };
+   
+
     return (
         <Wrapper>
 
-        <form 
-            action="/" 
-            method="get"
-            autoComplete="off"
-            onSubmit={onSubmit}
-        >
-        <label htmlFor="header-search">
-            <span className="visually-hidden">Search blog posts</span>
-        </label>
-        <input
-            value={searchQuery}
-            onInput={e => setSearchQuery(e.target.value)}
-            type="text"
-            id="header-search"
-            placeholder="Co hledate ?"
-            name="s" 
-            />
-        <button type="submit">Hledat</button>
-    </form>
-            </Wrapper>
+    
+        <div className='content'>
+            <form onSubmit={handleSubmit}>
+            {/* search input */}
+            <div className='form-control'>
+                <input   
+                type='text'
+                name='text'
+                placeholder='search'
+                className='search-input'
+                value={text}
+                onChange={updateFilters}
+                />
+            <button type='submit'>Hledat</button>  
+            </div>
+            </form>
+        </div>
+        </Wrapper>
     )
 }
 
