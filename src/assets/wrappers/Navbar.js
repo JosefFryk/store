@@ -21,6 +21,7 @@ const Wrapper = styled.nav`
     .right-bottom-box {
         display:flex;
         flex-direction: row;
+        gap: 15rem;
     }
     .right-top-box {
         display: flex;

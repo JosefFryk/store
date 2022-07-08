@@ -7,7 +7,9 @@ import CartButtons from '../components/CartButtons'
 
 
 
+
 const Navbar = () => {
+ 
 
 
   return (
@@ -19,32 +21,22 @@ const Navbar = () => {
           <Logo />
           <h3 className='logo-text'>Shopenze</h3>
         </div>
+
         <div className="right-box">
           <div className="right-top-box">
             <UpperNavMenu/>
           </div>
-
-
-
-
           <div className="right-bottom-box">
 
             <div className="search-box">
-              <SearchBar/>
-              
+              <SearchBar/>           
             </div>
             <div className="kosik-box">
               <CartButtons />
             </div>
-          <div>
-
+          </div>
         </div>
-        </div>
-
-      </div>
-
-
-       
+    
       </Wrapper>
     
     )

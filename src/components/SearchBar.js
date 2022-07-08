@@ -1,7 +1,7 @@
-
 import Wrapper from '../assets/wrappers/SearchBar'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { useFilterContext } from '../context/filterContext';
+import { Icon } from '@iconify/react';
 
 const SearchBar = () => {
     const {
@@ -15,6 +15,8 @@ const SearchBar = () => {
         event.preventDefault();
         navigate('/products');
       };
+
+      const location = useLocation();
    
 
     return (
@@ -25,15 +27,21 @@ const SearchBar = () => {
             <form onSubmit={handleSubmit}>
             {/* search input */}
             <div className='form-control'>
-                <input   
+            <label for="search">Search for furniture</label>
+                <input
+                id='search'   
                 type='text'
                 name='text'
-                placeholder='search'
+                placeholder='Search...'
                 className='search-input'
                 value={text}
                 onChange={updateFilters}
+                autofocus required
                 />
-            <button type='submit'>Hledat</button>  
+              {location.pathname === "/products" ? 
+              <div className='arrow-search-box'><Icon icon="akar-icons:arrow-down-thick" width="35" height="35" /></div> :
+              <button type='submit'>Search</button> }
+
             </div>
             </form>
         </div>
