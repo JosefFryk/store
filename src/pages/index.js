@@ -3,6 +3,7 @@ import Landing from './Landing'
 import ProductsPage from './ProductsPage'
 import SingleProduct from './SingleProduct'
 import Auth from './Auth'
+import About from './About'
 
 
 export
@@ -12,4 +13,5 @@ export
     Landing,
     ProductsPage,
     SingleProduct,
+    About,
 }

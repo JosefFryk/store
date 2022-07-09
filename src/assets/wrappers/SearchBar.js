@@ -71,6 +71,14 @@ const Wrapper = styled.div`
         background: var(--clr-green-dark);
         height: 100%;
         padding: 6px 27px;
+        border-radius: 0 var(--radius) var(--radius) 0;
+        outline-style: solid;
+        outline-color: var(--crl-black);
+        outline-width: 2px;
+
+    }
+    .red-box {
+        background: var(--clr-red-dark);
     }
 
 

@@ -17,7 +17,7 @@ const SearchBar = () => {
       };
 
       const location = useLocation();
-   
+      const { filtered_products: products } = useFilterContext()
 
     return (
         <Wrapper>
@@ -39,7 +39,13 @@ const SearchBar = () => {
                 autofocus required
                 />
               {location.pathname === "/products" ? 
-              <div className='arrow-search-box'><Icon icon="akar-icons:arrow-down-thick" width="35" height="35" /></div> :
+              (products.length > 0 ?
+                <div className='arrow-search-box'>
+                  <Icon icon="akar-icons:arrow-down-thick" width="35" height="35" />
+                </div> : 
+                <div className='arrow-search-box red-box'>
+                  <Icon  icon="iconoir:file-not-found" width="35" height="35" />
+                </div>):
               <button type='submit'>Search</button> }
 
             </div>

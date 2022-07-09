@@ -6,6 +6,8 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;600&display=swap");
+
 
 html {
     font-size: 100%;
@@ -23,8 +25,9 @@ html {
   --clr-primary-6: hsl(22, 31%, 60%);
   --clr-primary-7: hsl(22, 31%, 67%);
   --clr-primary-8: hsl(20, 31%, 74%);
-  --clr-primary-9: hsl(22, 31%, 81%);
+  --clr-primary-9: hsl(33, 39%, 95%);
   --clr-primary-10: hsl(22, 31%, 88%);
+  --clr-primary-11: hsl(48, 53%, 33%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);

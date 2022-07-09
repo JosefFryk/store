@@ -12,10 +12,10 @@ const UpperNavMenu = () => {
                 <Link to="/products">Products</Link>
             </div>
             <div>
-                <Link to="/cart">Cart</Link>
+                <Link to="/about">About</Link>
             </div>         
             <div>
-                <Link to="/login">Login</Link>
+                <Link to="/register">Register</Link>
             </div>         
                    
         </Wrapper> 
