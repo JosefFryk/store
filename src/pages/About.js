@@ -1,8 +1,7 @@
 import Wrapper from '../assets/wrappers/About'
 import Accordion from '../components/Accordion';
 import { accordionData } from '../utils/constants';
-import detailsImg from '../assets/images/about-details.png'
-import bgImage from '../assets/images/bedImg.png'
+import bgImage from '../assets/images/bedImg.png';
 
 
 
@@ -36,14 +35,10 @@ const About = () => {
                     <h3>We're into the details</h3>
                     <p>From the big picture to the nuts and bolts, we're making better furniture for you and the planet.</p>
                     <div className="accordion">
-                        {accordionData.map(({ title, content }) => (
-                            <Accordion title={title} content={content} />
-                            ))}
+                      <Accordion/>
                     </div>
                 </div>
-                <div className='about-details-leftside'>
-                    <img src={detailsImg} alt='furniture' />
-                </div>
+               
             </div>
 
         </Wrapper>

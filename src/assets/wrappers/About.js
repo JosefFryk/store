@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section`
-display: flex;
-flex-direction: column;
-justify-content: center;
+
+
 
 .about-title-box {
     display: flex;
@@ -23,6 +22,11 @@ h1 {
     font-size: 6rem;
     font-weight: 600;
 }
+h3 {
+    font-size: 3.5rem;
+}
+
+
 
 .about-info-box {
     display: flex;
@@ -37,9 +41,26 @@ h1 {
     font-size: 2rem;
 }
 .about-bg-mission {
-   
+    margin: auto;
+    position: relative;
+    height: 45rem;
+    max-width: 1440px;
+}
+.about-text-mission {
+    position: absolute;
+    top: 10px;
+    right: 120px;
+    width: 25%;
+    color: var(--clr-white);
+}
+.about-details-expands {
+    height: 90vh;
+    color: var(--clr-primary-11);
 }
 
+.about-details-expands p {
+    font-size: 2rem;
+}
 
 
 
