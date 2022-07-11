@@ -30,15 +30,8 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <div className='about-details-expands'>
-                <div className='about-details-rightside'>
-                    <h3>We're into the details</h3>
-                    <p>From the big picture to the nuts and bolts, we're making better furniture for you and the planet.</p>
-                    <div className="accordion">
-                      <Accordion/>
-                    </div>
-                </div>
-               
+            <div className='about-details-expands'>    
+                <Accordion/>
             </div>
 
         </Wrapper>

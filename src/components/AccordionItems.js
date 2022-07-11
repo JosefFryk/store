@@ -1,41 +1,33 @@
-import { useRef } from 'react';
-import Wrapper from '../assets/wrappers/About';
+import { Icon } from '@iconify/react';
+import Wrapper from '../assets/wrappers/AccordionItems';
 
-const AccordionItems = ({ title, content,imageUrl, imageAlt, active, onToggle }) => {
-
-    
-
-
-
-
-const contentEl = useRef();
+const AccordionItems = ({ title, content, active, onToggle }) => {
 
 return (
     <Wrapper>            
         <li className={`accordion_item ${active ? "active" : ""}`}>
             <button className="button" onClick={onToggle}>
-                {title}
-                <span className="control">{active ? "—" : "+"} </span>
+                <div className='button-inner-text'>
+                 <span>{title}</span>
+                 <span className="control">{active ? <Icon icon="akar-icons:chevron-up" /> : <Icon icon="akar-icons:chevron-down" />} </span>
+                </div>
             </button>
             <div
-                ref={contentEl}
                 className="content_wrapper"
                 style={
                     active
-                    ? { height: contentEl.current.scrollHeight }
+                    ? { height: '160px' }
                     : { height: "0px" }
                 }
                 >
-                {active && <div>
+                {active && <div className='expanded-content'>
                     <div className="content">{content}</div>
-                    <div className='content-img-box'>
-                        <img className='content-img'  src={imageUrl} alt={imageAlt}/>
-                    </div>
                 </div>
                 
                 }
             </div>
         </li>
+     
     </Wrapper>
   );
 }

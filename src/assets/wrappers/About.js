@@ -12,6 +12,7 @@ const Wrapper = styled.section`
     height: 30rem;
     border-bottom: 2px solid var(--clr-primary-11);
     color: var(--clr-primary-11);
+
 }
 
 h1, h3, p {
@@ -53,17 +54,14 @@ h3 {
     width: 25%;
     color: var(--clr-white);
 }
+
 .about-details-expands {
-    height: 90vh;
+    display: block;
+    height: 100vh;
     color: var(--clr-primary-11);
+    padding-left: 50px;
+    padding-right: 50px;   
 }
-
-.about-details-expands p {
-    font-size: 2rem;
-}
-
-
-
 
 `
 

@@ -1,36 +1,42 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section`
-.button {
-  font-size: 16px;
-  background-color: #008593;
-  color: #fff;
-  text-align: left;
-  font-weight: 700;
+  
+ 
+.expanded-content {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
+  flex: row;
+}
+.button {
+  font-size: 2rem;
+  text-align: left;
+  font-weight: 600;
+  width: 50%;
   align-items: center;
   padding: 18px 8px;
   cursor: pointer;
   border: none;
+  color: var(--clr-primary-11);
 }
+.button-inner-text {
+ display: grid;
+ grid-template-columns: 80% auto;
+}
+
 .control {
-  font-size: 20px;
+  font-size: 1.5rem;
+  justify-self: end;
 }
 .content {
-  background-color: #f7f7f7;
   padding: 20px;
+  width: 50%;
+
 }
 /* activate toggle */
 .accordion_item.active .button {
-  background-color: #105057;
 }
 .content_wrapper {
-  height: 0;
-  overflow: hidden;
-  transition: height ease 0.2s;
+  display: flex;
 }
 
 `
