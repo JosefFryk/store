@@ -62,7 +62,31 @@ h3 {
     padding-left: 50px;
     padding-right: 50px;   
 }
-
+@media (max-width:576px){
+    h3{
+        margin: 2px;
+        line-height: 1;
+    }
+    .about-title-box h1{
+        padding-left: 4rem;
+        font-size: 5rem;
+    }
+    .about-info-box p {
+        font-size: 1.2rem;
+    }
+    .about-text-mission{
+        display: flex;
+        flex-direction: row;
+        top:0px;
+        left: 10px;
+        gap: 1rem;
+    }
+    .about-text-mission p {
+        height: 200px;
+        width: 200px;
+        line-height: 1;
+    }
+}
 `
 
 export default Wrapper

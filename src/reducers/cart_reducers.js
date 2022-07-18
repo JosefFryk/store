@@ -30,7 +30,7 @@ import {
           name: product.name,
           color,
           amount,
-          image: product.images[0].url,
+          image: product.imageAttach[0].url,
           price: product.price,
           max: product.stock,
         }

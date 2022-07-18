@@ -2,11 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.section`
   
- 
-.expanded-content {
-  display: flex;
-  flex: row;
-}
+
 .button {
   font-size: 2rem;
   text-align: left;
@@ -17,6 +13,7 @@ const Wrapper = styled.section`
   cursor: pointer;
   border: none;
   color: var(--clr-primary-11);
+  background-color: transparent;
 }
 .button-inner-text {
  display: grid;
@@ -29,7 +26,7 @@ const Wrapper = styled.section`
 }
 .content {
   padding: 20px;
-  width: 50%;
+  width: 80%;
 
 }
 /* activate toggle */

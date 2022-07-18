@@ -53,8 +53,9 @@ const SingleProduct = () => {
     reviews,
     id: sku,
     company,
-    images,
+    imageAttach,
   } = product
+  console.log(product.featured)
   return (
     <Wrapper>
       <PageHero title={name} product />
@@ -63,7 +64,7 @@ const SingleProduct = () => {
           back to products
         </Link>
         <div className=' product-center'>
-          <ProductImages images={images} />
+          <ProductImages images={imageAttach} />
           <section className='content'>
             <h2>{name}</h2>
             <Stars stars={stars} reviews={reviews} />
@@ -87,6 +88,7 @@ const SingleProduct = () => {
         </div>
       </div>
     </Wrapper>
+   
   )
 }
 

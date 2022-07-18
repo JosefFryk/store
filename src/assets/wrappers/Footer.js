@@ -8,6 +8,9 @@ const Wrapper = styled.section`
     justify-content: space-around;
     gap: 5rem;
     padding: 10px 0;
+    .footer-address{
+        padding-left: 1rem;
+    }
 
     h4 {
         color: var(--clr-primary-3);
@@ -21,8 +24,18 @@ const Wrapper = styled.section`
     .footer-icons{
         width: 140px;
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
         gap: 0.5rem;
+        padding-left: 1rem;
+    }
+    @media (max-width: 576px) {
+        gap:1rem;
+        h2{
+            margin: auto;
+        }
+        h4 {
+            margin: auto;
+        }
     }
 
 
