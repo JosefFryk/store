@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css';
 import SharedLayout from './components/SharedLayout'
 
-import { SingleProduct , Cart, Landing, ProductsPage, Auth, About } from './pages';
+import { SingleProduct , Cart, Landing, ProductsPage, Auth, About, Error } from './pages';
 
 
 
@@ -20,6 +20,8 @@ function App() {
         <Route  exact path='/products/:id' element={<SingleProduct/>} />
         <Route exact path='/products' element={<ProductsPage />}/>
         <Route exact path='/about' element={<About />}/>
+        <Route path='*' element= {<Error />}/>
+       
         
         
         </Route>

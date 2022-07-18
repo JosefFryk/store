@@ -4,6 +4,8 @@ import ProductsPage from './ProductsPage'
 import SingleProduct from './SingleProduct'
 import Auth from './Auth'
 import About from './About'
+import Error from './Error'
+
 
 
 export
@@ -14,4 +16,5 @@ export
     ProductsPage,
     SingleProduct,
     About,
+    Error,
 }
