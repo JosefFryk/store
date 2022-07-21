@@ -1,6 +1,5 @@
 import Wrapper from '../assets/wrappers/About'
 import Accordion from '../components/Accordion';
-import { accordionData } from '../utils/constants';
 import bgImage from '../assets/images/bedImg.png';
 
 

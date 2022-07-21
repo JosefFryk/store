@@ -27,10 +27,40 @@ const Wrapper = styled.nav`
         display: flex;
         justify-content: flex-end;
     }
+    /* .nav-toggle {
+      display: none;
+    } */
+
+    .kosik-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.5rem;
+    }
     @media (max-width: 576px) {
+        padding: 0;
+
+
+        // if more pages needed
+        /* .nav-toggle {
+            display: contents;
+            background: transparent;
+            border: transparent;
+            color: var(--clr-primary-5);
+            cursor: pointer;
+            svg {
+            font-size: 2rem;
+            }
+        } */
+
+        .right-bottom-box{
+            gap:5rem;
+        }
     .logo-box {
         display: none;
+        
     }
+    
   }
  
 

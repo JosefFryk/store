@@ -3,6 +3,8 @@ import Logo from './Logo'
 import SearchBar from "./SearchBar"
 import UpperNavMenu from "./UpperNavMenu"
 import CartButtons from '../components/CartButtons'
+// import { useProductsContext } from '../context/productContext'
+
 
 
 
@@ -10,6 +12,7 @@ import CartButtons from '../components/CartButtons'
 
 const Navbar = () => {
  
+  // const { openSidebar } = useProductsContext()
 
 
   return (
@@ -36,6 +39,10 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+        {/* if more pages needed */}
+        {/* <button type='button' className='nav-toggle' onClick={openSidebar}>
+            <FaBars />
+          </button> */}
     
       </Wrapper>
     

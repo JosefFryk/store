@@ -4,23 +4,31 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  width: 225px;
+  
+  
   .cart-btn {
-    color: var(--clr-black);
-    font-size: 1.5rem;
-    letter-spacing: var(--spacing);
     display: flex;
     align-items: center;
+    color: var(--clr-primary-5);
+    font-size: 1.5rem;
+    letter-spacing: var(--spacing);
+    background: transparent;
+    border-color: transparent;
+    max-height: 34px;
+    cursor: pointer;
+    &:hover {
+          border-bottom: 2px solid var(--clr-primary-7);
+        }
   }
   .cart-container {
     display: flex;
     align-items: center;
     position: relative;
     svg {
-      height: 1.6rem;
+      height: 1rem;
       margin-left: 5px;
     }
+
   }
   .cart-value {
     position: absolute;
@@ -34,7 +42,7 @@ const Wrapper = styled.div`
     border-radius: 50%;
     font-size: 0.75rem;
     color: var(--clr-white);
-    padding: 12px;
+    padding: 10px;
   }
   .auth-btn {
     display: flex;
@@ -43,11 +51,15 @@ const Wrapper = styled.div`
     border-color: transparent;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--clr-grey-1);
+    color: var(--clr-primary-5);
     letter-spacing: var(--spacing);
     svg {
       margin-left: 5px;
     }
+    &:hover {
+          border-bottom: 2px solid var(--clr-primary-7);
+        }
   }
+
 `
 export default Wrapper
