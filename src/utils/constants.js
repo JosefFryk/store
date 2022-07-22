@@ -78,7 +78,7 @@ export const services = [
 ];
 
 
-export const products_url = 'http://shopenze-api.netlify.app/api/products'
+export const products_url = 'https://shopenze-api.netlify.app/api/products'
 
 
-export const single_product_url = `http://shopenze-api.netlify.app/api/single-product?id=`
+export const single_product_url = `https://shopenze-api.netlify.app/api/single-product?id=`
