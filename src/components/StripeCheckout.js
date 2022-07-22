@@ -51,17 +51,18 @@ const CheckoutForm = () => {
       const createPaymentIntent = async () => {
         try {
           const {data} = await axios.post(
-          '/.netlify/functions/create-payment-intent',
-          JSON.stringify({cart, shipping_fee,  total_amount})
-          )
-
-          setClientSecret(data.clientSecret)
-        } catch (error) {
-          
+            '/.netlify/functions/create-payment-intent',
+            JSON.stringify({cart, shipping_fee,  total_amount})
+            )
+            
+            setClientSecret(data.clientSecret)
+          } catch (error) {
+            
+          }
         }
-      }
       useEffect(()=> {
         createPaymentIntent()
+          // eslint-disable-next-line
       }, [])
 
       const handleChange = async (event) => {
@@ -88,7 +89,7 @@ const CheckoutForm = () => {
         setDone(true)
         setTimeout(() => {
           clearCart()
-          navigate.push('/')
+          navigate('/products')
         }, 10000)
       }
       }
@@ -98,13 +99,13 @@ const CheckoutForm = () => {
         <article>
           <h4>Thank you</h4>
           <h4>Your payment was successful!</h4>
-          <h4>Redirecting to home page shortly</h4>
+          <h4>Redirecting to products page shortly</h4>
         </article>
       ) : (
         <article>
           <h4>Hello, {myUser && myUser.name}</h4>
           <p>Your total is {formatPrice(shipping_fee + total_amount)}</p>
-          <p>Test Card Number : 4242 4242 4242 4242</p>
+          <p>Test Card Number : 5555 5555 5555 4444</p>
         </article>
       )}
       <form id='payment-form' onSubmit={handleSubmit}>

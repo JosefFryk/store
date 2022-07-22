@@ -1,4 +1,4 @@
-import { Route, Navigate, Outlet } from 'react-router-dom'
+import { Navigate, Outlet } from 'react-router-dom'
 import { useAuth0 } from '@auth0/auth0-react'
 
 const AuthRoute = ({ children, ...rest }) => {
