@@ -14,6 +14,7 @@ import Hero from './Hero'
 import Services from  './Services'
 import FeaturedProducts from './FeaturedProducts'
 import Contact from './Contact'
+import StripeCheckout from './StripeCheckout'
 
 
 export {
@@ -32,4 +33,5 @@ export {
   Contact,
   Hero,
   Services,
+  StripeCheckout,
 }

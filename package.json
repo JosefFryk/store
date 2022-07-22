@@ -7,6 +7,8 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.11.0",
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "react": "^18.2.0",
@@ -15,6 +17,7 @@
     "react-router-dom": "^6.0.2",
     "react-scripts": "5.0.1",
     "react-social-icons": "^5.13.0",
+    "stripe": "^9.14.0",
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"
   },
@@ -22,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "netlify": "netlify dev",
+    "dev": "netlify dev"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "@iconify/react": "^3.2.2"
+    "@iconify/react": "^3.2.2",
+    "netlify-cli": "^10.10.0"
   }
 }

@@ -5,6 +5,8 @@ import SingleProduct from './SingleProduct'
 import Auth from './Auth'
 import About from './About'
 import Error from './Error'
+import Checkout from './Checkout'
+import AuthRoute from './AuthRoute'
 
 
 
@@ -17,4 +19,6 @@ export
     SingleProduct,
     About,
     Error,
+    Checkout,
+    AuthRoute,
 }

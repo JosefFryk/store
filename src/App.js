@@ -21,8 +21,9 @@ function App() {
         <Route exact path='/products' element={<ProductsPage />}/>
         <Route exact path='/about' element={<About />}/>
         <Route path='*' element= {<Error />}/>
-        <AuthRoute exact path='/checkout' element={<Checkout />}/>
-      
+        <Route exact path='/' element={<AuthRoute/>} >
+            <Route exact path='/checkout' element={<Checkout />} />
+        </Route>
        
         
         
